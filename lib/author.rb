@@ -9,9 +9,13 @@ class Author
     @@all << self
   end
   
-  def posts 
+  def self.all 
     @@all 
   end 
+  
+  def posts 
+    
+  end
   
   def add_post(post_title)
     post_title.author = self
